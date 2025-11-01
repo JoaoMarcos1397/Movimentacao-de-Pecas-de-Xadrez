@@ -4,6 +4,7 @@ int main(){
 
 int b = 0;
 int r = 0;
+int movimentocompleto = 1;
 
 printf("=======================");
 printf("MOVIMENTAÇÃO DE PEÇAS DE XADREZ");
@@ -40,6 +41,20 @@ while (r < 8)
     r++;
 }
 
+printf("\n"); //pulei linha
+
+printf("-------------------------------------\n");
+//Mover o cavalo em "L"
+printf("*** CAVALO *** \n"); //Estrutura em "while" aninhado em "for"
+while (movimentocompleto --) //declarei "--" para zerar o movimento de loop 1 para 0. Se eu declarasse movimento = 2, teria dois loops
+{ 
+    for (int i = 0; i < 2; i++)
+{
+    printf("Cima\n");
+}
+
+    printf("Esquerda\n");
+}
 
 
 return 0;
